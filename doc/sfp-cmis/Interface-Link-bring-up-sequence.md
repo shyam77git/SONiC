@@ -143,7 +143,7 @@ Please refer to the  flow/sequence diagrams which covers the following required 
 Following items are not in the scope of this document. They would be taken up separately
 1. xcvrd restart 
    - If the xcvrd goes for restart, then all the DB events will be replayed. 
-     Here the Datapath init/activate (for 400G), tx-disable register set (for 100G), will be a no-op if the optics is already in that state 
+     Here the Datapath init/activate for CMIS compliant optical modules, tx-disable register set (for SFF complaint optical modules), will be a no-op if the optics is already in that state 
 2. syncd/gbsyncd/swss docker container restart
    - Cleanup scenario - the host_tx_ready field in STATE-DB should be updated to “False” to respective ports that a PHY/NPU interface with
 3. CMIS API feature is not part of this design and the APIs will be used in this design. For CMIS HLD, Please refer to:
