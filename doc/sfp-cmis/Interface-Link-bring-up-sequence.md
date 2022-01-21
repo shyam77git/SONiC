@@ -116,7 +116,7 @@ Recommend following this high-level work-flow sequence to accomplish the Objecti
     - there is a possibility of interface link flaps with non-quiescent optical modules <QSFP+/SFP28/SFP+> if this 'deterministic approach' is not followed
     - It helps bring down the optical module laser when interface is adminstiratively shutdown. Per the workflow here, this is acheived by xcvrd listening to host_tx_ready field from PORT_TABLE of STATE_DB. Turning the laser off would reduce the power consumption and avoid any lab hazard
     - Additionally provides uniform workflow (from SONiC NOS) across all interface types with or without module presence. 
-  - This synchronization will also benefit native SFP+ ports as they are "plug N play" and may not have quiescent functionality. (xcvrd can use the optional 'soft tx disable' ctrl reg to disable the tx)
+  - This synchronization will also benefit SFP+ optical modules as they are "plug N play" and may not have quiescent functionality. (xcvrd can use the optional 'soft tx disable' ctrl reg to disable the tx)
 
 # Proposed Work-Flows
 Please refer to the  flow/sequence diagrams which covers the following required use-cases
