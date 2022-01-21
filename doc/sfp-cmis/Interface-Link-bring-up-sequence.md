@@ -107,7 +107,7 @@ Recommend following this high-level work-flow sequence to accomplish the Objecti
 - xcvrd to subscribe to a new field “host_tx_ready” in port table state-DB
 - Orchagent will set the “host_tx_ready” to true/false based on the SET_ADMIN_STATE attribute return status to syncd/gbsyncd. (As part of SET_ADMIN_STATE attribute enable, the NPU Tx is enabled)
 - xcvrd process the “host_tx_ready” value change event and do optics datapath init / de-init using CMIS API
-- Recommendation is to follow this proposal for all the known interfaces types/speed- 400G/100G/40G/25G/10G. Reason being: 
+- Recommendation is to follow this proposal for all the known interfaces types- 400G/100G/40G/25G/10G. Reason being: 
   - CMIS complaint optical modules:-
       All CMIS complaint optical modules will follow this approach as recommended in the CMIS spec.
   - SFF complaint optical modules:- 
