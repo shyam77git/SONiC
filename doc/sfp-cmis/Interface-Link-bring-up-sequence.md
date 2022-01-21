@@ -96,7 +96,7 @@ Interface link bring-up sequence and workflows for use-cases around it
 
 # Objective
 
-Have a determistic approach for Interface link bring-up sequence for all interfaces types/speed i.e. below sequence to be followed:
+Have a determistic approach for Interface link bring-up sequence for all interfaces types i.e. below sequence to be followed:
   1. Initialize and enable NPU Tx and Rx path
   2. For system with 'External' PHY: Initialize and enable PHY Tx and Rx on both line and host sides; ensure host side link is up 
   3. Then only perform optics data path initialization/activation/Tx enable (for CMIS complaint optical modules) and Tx enable (for SFF complaint optical modules)
